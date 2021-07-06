@@ -25,7 +25,7 @@ function CreateDeck() {
         history.push(`/decks/${output.id}`);
       } catch (error) {
         if (error.name === "AbortError") {
-          // Ignore `AbortError`
+       
           console.log("Aborted");
         } else {
           throw error;

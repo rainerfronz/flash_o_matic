@@ -27,7 +27,7 @@ function AddCard() {
       } catch (error) {
         if (error.name === "AbortError") {
           // Ignore `AbortError`
-          console.log("Aborted");
+          console.log("Aborted", deckId);
         } else {
           throw error;
         }
@@ -45,7 +45,7 @@ function AddCard() {
         setFormData(initialState);
       } catch (error) {
         if (error.name === "AbortError") {
-          // Ignore `AbortError`
+          
           console.log("Aborted");
         } else {
           throw error;
